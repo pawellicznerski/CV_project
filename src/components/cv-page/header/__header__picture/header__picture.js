@@ -6,6 +6,8 @@ class HeaderPicture extends Component {
   render() {
     return (
       <div className="header__picture">
+        <div className="header__picture__content">
+        </div>
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import './components/cv-page/cv-page.js';
+import CVPage from './components/cv-page/cv-page.js';
 
 class App extends Component {
   render() {

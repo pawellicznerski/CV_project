@@ -1,0 +1,10 @@
+//includes styles for every inner block in education
+@import "__education__education-progress-bar/education__education-progress-bar.scss" ;
+//includes modifier for section name. Folder with element is in "./main/__section-name" and it contain basic styles
+@import "_education__section-name/education__section-name.scss" ;
+
+.education{
+  width:100%;
+  height:900px;
+  border: 1px solid pink;
+}

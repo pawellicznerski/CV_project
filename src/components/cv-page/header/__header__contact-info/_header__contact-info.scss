@@ -1,0 +1,44 @@
+@import "./../../../library/media-query-mixins.scss";
+
+.header__contact-info{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  width:330px;
+  height:208px;
+  margin: 50px 0 50px 10px;
+
+  .header__contact-info__item{
+    display: flex;
+    flex-direction: row;
+  }
+  .header__contact-info__item__text{
+    margin-top: 8px;
+    font-size: 18px;
+  }
+  .header__contact-info__item__text_last{
+    text-align: right;
+  }
+
+  .header__contact-info__item__icon{
+    margin:8px 0 0 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:25px;
+    height:25px;
+  }
+  .header__contact-info__item__icon_birth-date{
+  background-image:url("./components/cv-page/header/__header__contact-info/__header__contact-info__images/header__contact-info__image_birth-date.svg");
+  }
+  .header__contact-info__item__icon_phone{
+    background-image: url("./components/cv-page/header/__header__contact-info/__header__contact-info__images/header__contact-info__image_phone.svg");
+  }
+  .header__contact-info__item__icon_e-mail{
+    background-image: url("./components/cv-page/header/__header__contact-info/__header__contact-info__images/header__contact-info__image_e-mail.svg");
+  }
+  .header__contact-info__item__icon_address{
+    background-image: url("./components/cv-page/header/__header__contact-info/__header__contact-info__images/header__contact-info__image_address.svg");
+  }
+}

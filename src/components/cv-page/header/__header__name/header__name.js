@@ -5,7 +5,9 @@ import React, { Component } from 'react';
 class HeaderName extends Component {
   render() {
     return (
-      <div className="header__name">
+      <div className="header__name header__name_size">
+        <p className="header__name__full-name">paweł licznerski</p>
+        <p className="header__name__profession">front-end developer</p>
       </div>
     );
   }
