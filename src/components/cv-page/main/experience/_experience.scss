@@ -2,3 +2,39 @@
 // @import "__experience__experience-progress-bar/experience__experience-progress-bar.scss" ;
 //includes modifier for section name. Folder with element is in "./main/__section-name" and it contain basic styles
 @import '_experience_modifiers/_experience__section-name/experience__section-name.scss';
+@import "./../../_cv-page__base/cv-page__base__variables.scss";
+
+.experience{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  .experience__section{
+    width: 49%;
+    // &_left{
+    //
+    // }
+    // &_right{
+    //   border-left: 3px solid black;
+    // }
+    &__el{
+      width:90%;
+      background-color: $color__details_grey_light;
+      border-radius: 8%;
+      &__text_title{
+        // background-color: $color__details_grey_light;
+      }
+      &__text_main{
+        // background-color: $color__details_grey_light;
+      }
+      &__text_date{
+
+        &_month{
+          // background-color: $color__details_grey_light;
+        }
+        &_year{
+          // background-color: $color__details_grey_light;
+        }
+      }
+    }
+  }
+}

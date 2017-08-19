@@ -106,15 +106,26 @@
 .education {
   width: 100%; }
 
-.education__section-name {
+.experience__section-name {
   margin: 8px 0 0 10px; }
-  .education__section-name__icon_education {
+  .experience__section-name__icon_experience {
     margin: 8px 0 0 0;
     height: 22px;
     width: 22px;
-    background-image: url("./components/cv-page/main/education/_education_modifiers/_education__section-name/education__section-name__icon_education.svg"); }
-  .education__section-name__text_education {
+    background-image: url("./components/cv-page/main/experience/_experience_modifiers/_experience__section-name/experience__section-name__icon_experience.svg"); }
+  .experience__section-name__text_experience {
     font-size: 26px; }
+
+.experience {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+  .experience .experience__section {
+    width: 49%; }
+    .experience .experience__section__el {
+      width: 90%;
+      background-color: whitesmoke;
+      border-radius: 8%; }
 
 .main__section-name {
   width: 100%;

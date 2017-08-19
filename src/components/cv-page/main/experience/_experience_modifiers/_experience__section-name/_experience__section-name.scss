@@ -1,12 +1,12 @@
-.education__section-name{
+.experience__section-name{
   margin: 8px 0 0 10px;
-    &__icon_education{
+    &__icon_experience{
       margin: 8px 0 0 0;
       height: 22px;
       width: 22px;
-      background-image: url("./components/cv-page/main/education/_education_modifiers/_education__section-name/education__section-name__icon_education.svg");
+      background-image: url("./components/cv-page/main/experience/_experience_modifiers/_experience__section-name/experience__section-name__icon_experience.svg");
     }
-    &__text_education{
+    &__text_experience{
      font-size: 26px;
     }
 }
