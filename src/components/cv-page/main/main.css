@@ -1,102 +1,38 @@
-.education__education-progress-bar__bar-and-dates__el {
-  margin: 2px 0 0 10px;
-  padding: 0 0 0 10px;
-  height: 69px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row; }
-  .education__education-progress-bar__bar-and-dates__el::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 70px;
-    border: 2px solid black; }
-
-.education__education-progress-bar__bar-and-dates__el__text_first {
-  color: #1ea01e; }
-  .education__education-progress-bar__bar-and-dates__el__text_first::before {
-    top: 30px; }
-
-.education__education-progress-bar__bar-and-dates__el__text_second {
-  color: #e6992b; }
-  .education__education-progress-bar__bar-and-dates__el__text_second::before {
-    top: 100px; }
-
-.education__education-progress-bar__bar-and-dates__el__text_third {
-  color: #ae44b6; }
-  .education__education-progress-bar__bar-and-dates__el__text_third::before {
-    top: 170px; }
-
-.education__education-progress-bar__bar-and-dates__el__text_fourth {
-  color: #d244b6; }
-  .education__education-progress-bar__bar-and-dates__el__text_fourth::before {
-    content: none; }
-
-.education__education-progress-bar__bar-and-dates__el__circle::after {
-  content: "";
-  position: absolute;
-  top: calc(100%+50px);
-  left: -8px;
-  width: 10px;
-  height: 10px;
-  border: 4px solid black;
-  border-radius: 50%;
-  background-color: white; }
-
-.education__education-progress-bar__bar-and-dates__el__circle_first::after {
-  top: 30px; }
-
-.education__education-progress-bar__bar-and-dates__el__circle_second::after {
-  top: 100px; }
-
-.education__education-progress-bar__bar-and-dates__el__circle_third::after {
-  top: 170px; }
-
-.education__education-progress-bar__bar-and-dates__el__circle_fourth::after {
-  top: 240px; }
-
 .education__education-progress-bar {
   width: 100vw;
   display: flex; }
-
-.education__education-progress-bar__el {
-  border: 1px solid red;
-  list-style-type: none;
-  position: relative;
-  padding: 0;
-  display: flex;
-  width: 33.33%;
-  flex-direction: column; }
-
-.education__education-progress-bar__el__item {
-  margin: 25px 5px 5px 5px;
-  padding: 5px;
-  height: 65px;
-  border: 1px solid blue;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  vertical-align: middle;
-  text-align: center; }
+  .education__education-progress-bar__el {
+    list-style-type: none;
+    position: relative;
+    padding: 0;
+    width: 33.33%; }
+    .education__education-progress-bar__el__item {
+      margin: 0 5px;
+      height: 100px;
+      min-width: 20px;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      vertical-align: middle;
+      text-align: center; }
 
 .education__education-progress-bar__el__item_line::before {
   content: "";
   position: absolute;
   left: 0;
-  width: 0;
-  height: 90px;
-  border: 2px solid black; }
+  width: 4px;
+  height: 100px;
+  background-color: black; }
 
-.education__education-progress-bar__el__item_line_first::before {
+.education__education-progress-bar__el__item_line_0::before {
   top: 50px; }
 
-.education__education-progress-bar__el__item_line_second::before {
-  top: 145px; }
+.education__education-progress-bar__el__item_line_1::before {
+  top: 150px; }
 
-.education__education-progress-bar__el__item_line_third::before {
-  top: 240px; }
+.education__education-progress-bar__el__item_line_2::before {
+  top: 250px; }
 
 .education__education-progress-bar__el__item_line_last::before {
   content: none; }
@@ -110,8 +46,8 @@
 .education__education-progress-bar__el__item__text__circle-0::after {
   content: "";
   position: absolute;
-  top: 50px;
-  left: -8px;
+  top: 41px;
+  left: -7px;
   width: 10px;
   height: 10px;
   border: 4px solid black;
@@ -121,8 +57,8 @@
 .education__education-progress-bar__el__item__text__circle-1::after {
   content: "";
   position: absolute;
-  top: 145px;
-  left: -8px;
+  top: 141px;
+  left: -7px;
   width: 10px;
   height: 10px;
   border: 4px solid black;
@@ -132,8 +68,8 @@
 .education__education-progress-bar__el__item__text__circle-2::after {
   content: "";
   position: absolute;
-  top: 240px;
-  left: -8px;
+  top: 241px;
+  left: -7px;
   width: 10px;
   height: 10px;
   border: 4px solid black;
@@ -143,8 +79,8 @@
 .education__education-progress-bar__el__item__text__circle-3::after {
   content: "";
   position: absolute;
-  top: 335px;
-  left: -8px;
+  top: 341px;
+  left: -7px;
   width: 10px;
   height: 10px;
   border: 4px solid black;

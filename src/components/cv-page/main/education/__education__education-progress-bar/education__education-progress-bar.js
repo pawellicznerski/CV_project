@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import BarAndDates from './__education__education-progress-bar__bar-and-dates/education__education-progress-bar__bar-and-dates.js';
+// import BarAndDates from './__education__education-progress-bar__bar-and-dates/education__education-progress-bar__bar-and-dates.js';
 
 
 class EducationProgressBar extends Component {
@@ -23,13 +23,13 @@ class EducationProgressBar extends Component {
       </ul>
 
       <ul className="education__education-progress-bar__el">
-        <li className="education__education-progress-bar__el__item education__education-progress-bar__el__item_line education__education-progress-bar__el__item_line_first">
+        <li className="education__education-progress-bar__el__item education__education-progress-bar__el__item_line education__education-progress-bar__el__item_line_0">
           <p className="education__education-progress-bar__el__item__text  education__education-progress-bar__el__item__text__circle-0">Juin 2010</p>
         </li>
-        <li className="education__education-progress-bar__el__item education__education-progress-bar__el__item_line education__education-progress-bar__el__item_line_second">
+        <li className="education__education-progress-bar__el__item education__education-progress-bar__el__item_line education__education-progress-bar__el__item_line_1">
           <p className="education__education-progress-bar__el__item__text  education__education-progress-bar__el__item__text__circle-1">25 Juin 2010 - 21 Janvier 2017</p>
         </li>
-        <li className="education__education-progress-bar__el__item education__education-progress-bar__el__item_line education__education-progress-bar__el__item_line_third">
+        <li className="education__education-progress-bar__el__item education__education-progress-bar__el__item_line education__education-progress-bar__el__item_line_2">
           <p className="education__education-progress-bar__el__item__text  education__education-progress-bar__el__item__text__circle-2">Juin 2010</p>
         </li>
         <li className="education__education-progress-bar__el__item education__education-progress-bar__el__item_line education__education-progress-bar__el__item_line_last">

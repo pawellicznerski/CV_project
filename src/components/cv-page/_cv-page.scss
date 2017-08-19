@@ -2,3 +2,5 @@
 @import "./header/header.scss" ;
 //includes styles for cv main part block and section-name styles which appears in each inner block
 @import "./main/main.scss" ;
+//includes variables used in the whole project
+@import "./_cv-page_styles/cv-page_styles.scss" ;
