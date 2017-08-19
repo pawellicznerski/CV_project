@@ -1,4 +1,7 @@
-@import "__education__education-progress-bar__bar-and-dates/_education__education-progress-bar__bar-and-dates.scss";
+// dates texts colors
+@import "./../_education__base/education__base__variables.scss";
+// addition background color for text in the progress bar
+@import "./../../../_cv-page__base/cv-page__base__variables.scss";
 
 .education__education-progress-bar{
   width: 100vw;
@@ -31,7 +34,7 @@
     left:0;
     width: 4px;
     height: 100px;
-    background-color: black;
+    background-color: $color__details_grey_dark;
   }
   @for $i from 0 through 2{
     &_#{$i}{
@@ -48,9 +51,22 @@
 }
 
 .education__education-progress-bar__el__item__text{
+  color:  $color__details_green_lighness-4;
+  &_green{
+    color: $color__education-progress-bar__dates-green;
+  }
+  &_orange{
+    color:$color__education-progress-bar__dates-orange;
+  }
+  &_purple{
+    color:$color__education-progress-bar__dates-purple;
+  }
+  &_red{
+    color:$color__education-progress-bar__dates-red;
+  }
   &_color-background{
     color: white;
-    background-color: red;
+    background-color: $color__details_green_lighness-5;
     border-radius: 5%;
     padding: 5px 10px;
   }
@@ -63,7 +79,7 @@
         left:-7px;
         width: 10px;
         height: 10px;
-        border: 4px solid black;
+        border: 4px solid $color__details_grey_dark;
         border-radius: 50%;
         background-color: white;
       }

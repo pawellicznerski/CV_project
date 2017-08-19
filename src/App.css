@@ -7,66 +7,92 @@
   box-sizing: border-box; }
 
 .header__contact-info {
+  order: 2;
   display: flex;
-  align-items: flex-end;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  width: 330px;
-  height: 208px;
-  margin: 50px 0 50px 10px; }
-  .header__contact-info .header__contact-info__item {
+  width: 100%;
+  margin: 0px 0 10px 0px; }
+  .header__contact-info__item {
+    margin: 44px 0 0 0;
+    width: 25%;
     display: flex;
-    flex-direction: row; }
-  .header__contact-info .header__contact-info__item__text {
-    margin-top: 8px;
-    font-size: 18px; }
-  .header__contact-info .header__contact-info__item__text_last {
-    text-align: right; }
-  .header__contact-info .header__contact-info__item__icon {
-    margin: 8px 0 0 15px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 25px;
-    height: 25px; }
-  .header__contact-info .header__contact-info__item__icon_birth-date {
-    background-image: url("./components/cv-page/header/__header__contact-info/__header__contact-info__images/header__contact-info__image_birth-date.svg"); }
-  .header__contact-info .header__contact-info__item__icon_phone {
-    background-image: url("./components/cv-page/header/__header__contact-info/__header__contact-info__images/header__contact-info__image_phone.svg"); }
-  .header__contact-info .header__contact-info__item__icon_e-mail {
-    background-image: url("./components/cv-page/header/__header__contact-info/__header__contact-info__images/header__contact-info__image_e-mail.svg"); }
-  .header__contact-info .header__contact-info__item__icon_address {
-    background-image: url("./components/cv-page/header/__header__contact-info/__header__contact-info__images/header__contact-info__image_address.svg"); }
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+    .header__contact-info__item__text {
+      order: 2;
+      text-align: center;
+      vertical-align: middle;
+      align-self: flex-end;
+      word-wrap: break-word;
+      width: 100%;
+      font-size: 12px;
+      padding: 4px; }
+      .header__contact-info__item__text_last {
+        text-align: center;
+        vertical-align: middle; }
+    .header__contact-info__item__icon {
+      order: 1;
+      margin: 8px 0 0 10px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 40px;
+      height: 40px; }
+
+.header__contact-info__item__icon_birth-date {
+  background-image: url("./components/cv-page/header/__header__contact-info/__header__contact-info__images/header__contact-info__image_birth-date.svg"); }
+
+.header__contact-info__item__icon_phone {
+  background-image: url("./components/cv-page/header/__header__contact-info/__header__contact-info__images/header__contact-info__image_phone.svg"); }
+
+.header__contact-info__item__icon_e-mail {
+  background-image: url("./components/cv-page/header/__header__contact-info/__header__contact-info__images/header__contact-info__image_e-mail.svg"); }
+
+.header__contact-info__item__icon_address {
+  background-image: url("./components/cv-page/header/__header__contact-info/__header__contact-info__images/header__contact-info__image_address.svg"); }
 
 .header__name {
-  margin: 50px 0 50px 10px; }
-  .header__name .header__name_size {
-    width: 330px;
-    height: 208px; }
-  .header__name .header__name__full-name {
-    font-size: 49px;
+  margin: 0px 0 0px 0px;
+  order: 1;
+  width: 100%; }
+  .header__name__full-name {
+    text-align: center;
+    font-size: 20px;
     font-weight: bold;
-    text-transform: uppercase; }
-  .header__name .header__name__profession {
-    margin-top: 50px;
-    font-size: 30px;
-    text-transform: capitalize; }
+    text-transform: uppercase;
+    margin: 0;
+    width: auto;
+    height: auto; }
+  .header__name__profession {
+    text-align: center;
+    margin: 8px 0 0 0;
+    font-size: 16px;
+    text-transform: capitalize;
+    width: auto;
+    height: auto; }
 
 .header__picture {
-  margin: 50px 0 50px 10px;
-  width: 330px;
-  height: 208px;
+  margin: 10px 0 0 0px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center; }
   .header__picture .header__picture__content {
+    margin: 35px 0;
     border-radius: 50%;
-    width: 210px;
-    height: 210px;
+    width: 180px;
+    height: 180px;
     background-color: rgba(10, 10, 10, 0.6);
     background-image: url();
     background-position: center;
     background-repeat: no-repeat; }
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #8c8c8c; }
 
 .education__education-progress-bar {
   width: 100vw;
@@ -93,7 +119,7 @@
   left: 0;
   width: 4px;
   height: 100px;
-  background-color: black; }
+  background-color: #a2a2a2; }
 
 .education__education-progress-bar__el__item_line_0::before {
   top: 50px; }
@@ -107,86 +133,98 @@
 .education__education-progress-bar__el__item_line_last::before {
   content: none; }
 
-.education__education-progress-bar__el__item__text_color-background {
-  color: white;
-  background-color: red;
-  border-radius: 5%;
-  padding: 5px 10px; }
-
-.education__education-progress-bar__el__item__text__circle-0::after {
-  content: "";
-  position: absolute;
-  top: 41px;
-  left: -7px;
-  width: 10px;
-  height: 10px;
-  border: 4px solid black;
-  border-radius: 50%;
-  background-color: white; }
-
-.education__education-progress-bar__el__item__text__circle-1::after {
-  content: "";
-  position: absolute;
-  top: 141px;
-  left: -7px;
-  width: 10px;
-  height: 10px;
-  border: 4px solid black;
-  border-radius: 50%;
-  background-color: white; }
-
-.education__education-progress-bar__el__item__text__circle-2::after {
-  content: "";
-  position: absolute;
-  top: 241px;
-  left: -7px;
-  width: 10px;
-  height: 10px;
-  border: 4px solid black;
-  border-radius: 50%;
-  background-color: white; }
-
-.education__education-progress-bar__el__item__text__circle-3::after {
-  content: "";
-  position: absolute;
-  top: 341px;
-  left: -7px;
-  width: 10px;
-  height: 10px;
-  border: 4px solid black;
-  border-radius: 50%;
-  background-color: white; }
+.education__education-progress-bar__el__item__text {
+  color: rgba(0, 135, 135, 0.8); }
+  .education__education-progress-bar__el__item__text_green {
+    color: #1ea01e; }
+  .education__education-progress-bar__el__item__text_orange {
+    color: #e6992b; }
+  .education__education-progress-bar__el__item__text_purple {
+    color: #ae44b6; }
+  .education__education-progress-bar__el__item__text_red {
+    color: #ea44b6; }
+  .education__education-progress-bar__el__item__text_color-background {
+    color: white;
+    background-color: rgba(0, 160, 160, 0.8);
+    border-radius: 5%;
+    padding: 5px 10px; }
+  .education__education-progress-bar__el__item__text__circle-0::after {
+    content: "";
+    position: absolute;
+    top: 41px;
+    left: -7px;
+    width: 10px;
+    height: 10px;
+    border: 4px solid #a2a2a2;
+    border-radius: 50%;
+    background-color: white; }
+  .education__education-progress-bar__el__item__text__circle-1::after {
+    content: "";
+    position: absolute;
+    top: 141px;
+    left: -7px;
+    width: 10px;
+    height: 10px;
+    border: 4px solid #a2a2a2;
+    border-radius: 50%;
+    background-color: white; }
+  .education__education-progress-bar__el__item__text__circle-2::after {
+    content: "";
+    position: absolute;
+    top: 241px;
+    left: -7px;
+    width: 10px;
+    height: 10px;
+    border: 4px solid #a2a2a2;
+    border-radius: 50%;
+    background-color: white; }
+  .education__education-progress-bar__el__item__text__circle-3::after {
+    content: "";
+    position: absolute;
+    top: 341px;
+    left: -7px;
+    width: 10px;
+    height: 10px;
+    border: 4px solid #a2a2a2;
+    border-radius: 50%;
+    background-color: white; }
 
 .education__section-name {
-  margin: 0 0 0 10px; }
-  .education__section-name .education__section-name__icon_education {
-    background-image: url("./components/cv-page/main/education/_education__section-name/education__section-name__icon_education.svg"); }
+  margin: 8px 0 0 10px; }
+  .education__section-name__icon_education {
+    margin: 8px 0 0 0;
+    height: 22px;
+    width: 22px;
+    background-image: url("./components/cv-page/main/education/_education_modifiers/_education__section-name/education__section-name__icon_education.svg"); }
+  .education__section-name__text_education {
+    font-size: 26px; }
 
 .education {
-  width: 100%;
-  height: 900px;
-  border: 1px solid pink; }
+  width: 100%; }
+
+.education__section-name {
+  margin: 8px 0 0 10px; }
+  .education__section-name__icon_education {
+    margin: 8px 0 0 0;
+    height: 22px;
+    width: 22px;
+    background-image: url("./components/cv-page/main/education/_education_modifiers/_education__section-name/education__section-name__icon_education.svg"); }
+  .education__section-name__text_education {
+    font-size: 26px; }
 
 .main__section-name {
-  height: 80px;
-  width: 280px;
+  width: 100%;
   display: flex; }
-
-.main__section-name__icon {
-  margin: 11px 0 0 0;
-  height: 35px;
-  width: 35px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.main__section-name__text {
-  margin: 0 0 0 8px;
-  font-size: 42px;
-  text-transform: capitalize; }
+  .main__section-name__icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .main__section-name__text {
+    margin: 0 0 0 8px;
+    text-transform: capitalize; }
 
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #00545b;
   background-color: #f0f0f0;
   padding: 0px;

@@ -24,16 +24,16 @@ class EducationProgressBar extends Component {
 
       <ul className="education__education-progress-bar__el">
         <li className="education__education-progress-bar__el__item education__education-progress-bar__el__item_line education__education-progress-bar__el__item_line_0">
-          <p className="education__education-progress-bar__el__item__text  education__education-progress-bar__el__item__text__circle-0">Juin 2010</p>
+          <p className="education__education-progress-bar__el__item__text education__education-progress-bar__el__item__text_green  education__education-progress-bar__el__item__text__circle-0">Juin 2010</p>
         </li>
         <li className="education__education-progress-bar__el__item education__education-progress-bar__el__item_line education__education-progress-bar__el__item_line_1">
-          <p className="education__education-progress-bar__el__item__text  education__education-progress-bar__el__item__text__circle-1">25 Juin 2010 - 21 Janvier 2017</p>
+          <p className="education__education-progress-bar__el__item__text education__education-progress-bar__el__item__text_orange  education__education-progress-bar__el__item__text__circle-1">25 Juin 2010 - 21 Janvier 2017</p>
         </li>
         <li className="education__education-progress-bar__el__item education__education-progress-bar__el__item_line education__education-progress-bar__el__item_line_2">
-          <p className="education__education-progress-bar__el__item__text  education__education-progress-bar__el__item__text__circle-2">Juin 2010</p>
+          <p className="education__education-progress-bar__el__item__text education__education-progress-bar__el__item__text_purple  education__education-progress-bar__el__item__text__circle-2">Juin 2010</p>
         </li>
         <li className="education__education-progress-bar__el__item education__education-progress-bar__el__item_line education__education-progress-bar__el__item_line_last">
-          <p className="education__education-progress-bar__el__item__text  education__education-progress-bar__el__item__text__circle-3">Juin 2010</p>
+          <p className="education__education-progress-bar__el__item__text education__education-progress-bar__el__item__text_red  education__education-progress-bar__el__item__text__circle-3">Juin 2010</p>
         </li>
       </ul>
 

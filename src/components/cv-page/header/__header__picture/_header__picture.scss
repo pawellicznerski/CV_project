@@ -1,17 +1,18 @@
-@import "./../../../library/media-query-mixins.scss";
+// @import "./../../../library/media-query-mixins.scss";
 
 .header__picture{
-  margin: 50px 0 50px 10px;
-  width:330px;
-  height:208px;
+  // border: 1px solid red;
+  margin: 10px 0 0 0px;
+  width:100%;
+  // height:208px;
   display: flex;
   justify-content: center;
   align-items: center;
   .header__picture__content{
-    // border: 4px solid black;
+    margin: 35px 0;
     border-radius: 50%;
-    width:210px;
-    height:210px;
+    width:180px;
+    height:180px;
     background-color: rgba(10,10,10,0.6);
     background-image: url();
     background-position: center;

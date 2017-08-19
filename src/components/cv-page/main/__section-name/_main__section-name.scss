@@ -1,18 +1,13 @@
 .main__section-name{
-  height: 80px;
-  width: 280px;
+  width: 100%;
   display: flex;
-}
-.main__section-name__icon{
-  margin: 11px 0 0 0;
-  height: 35px;
-  width: 35px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.main__section-name__text{
-  margin: 0 0 0 8px;
-  font-size: 42px;
-  text-transform: capitalize;
+  &__icon{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__text{
+    margin: 0 0 0 8px;
+    text-transform: capitalize;
+  }
 }

@@ -1,0 +1,88 @@
+// dates texts colors
+@import "./../_experience__base/experience__base__variables.scss";
+// addition background color for text in the progress bar
+@import "./../../../_cv-page__base/cv-page__base__variables.scss";
+
+// .experience__experience-progress-bar{
+//   width: 100vw;
+//   display: flex;
+//   &__el{
+//     // border: 1px solid red;
+//     list-style-type: none;
+//     position: relative;
+//     padding: 0;
+//     width: 33.33%;
+//     &__item{
+//       margin: 0 5px ;
+//       height: 100px;
+//       min-width: 20px;
+//       // border: 1px solid blue;
+//       align-items: center;
+//       display: flex;
+//       flex-direction: row;
+//       justify-content: center;
+//       vertical-align: middle;
+//       text-align: center;
+//     }
+//   }
+// }
+//
+// .experience__experience-progress-bar__el__item_line{
+//   &::before{
+//     content:"";
+//     position: absolute;
+//     left:0;
+//     width: 4px;
+//     height: 100px;
+//     background-color: $color__details_grey_dark;
+//   }
+//   @for $i from 0 through 2{
+//     &_#{$i}{
+//       &::before{
+//         top:50px+($i*100px);
+//       }
+//     }
+//   }
+//   &_last{
+//     &::before{
+//       content:none;
+//     }
+//   }
+// }
+//
+// .experience__experience-progress-bar__el__item__text{
+//   color:  $color__details_green_lighness-4;
+//   &_green{
+//     color: $color__experience-progress-bar__dates-green;
+//   }
+//   &_orange{
+//     color:$color__experience-progress-bar__dates-orange;
+//   }
+//   &_purple{
+//     color:$color__experience-progress-bar__dates-purple;
+//   }
+//   &_red{
+//     color:$color__experience-progress-bar__dates-red;
+//   }
+//   &_color-background{
+//     color: white;
+//     background-color: $color__details_green_lighness-5;
+//     border-radius: 5%;
+//     padding: 5px 10px;
+//   }
+//   @for $i from 0 through 3 {
+//     &__circle-#{$i}{
+//       &::after{
+//         content:"";
+//         position: absolute;
+//         top: 50px-9px+($i *100px);
+//         left:-7px;
+//         width: 10px;
+//         height: 10px;
+//         border: 4px solid $color__details_grey_dark;
+//         border-radius: 50%;
+//         background-color: white;
+//       }
+//     }
+//   }
+// }
