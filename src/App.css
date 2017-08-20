@@ -5,6 +5,18 @@
   justify-content: center;
   width: 100%;
   margin: 0px 0 10px 0px; }
+  @media (min-width: 700px) {
+    .header__contact-info {
+      order: 3;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 33.33%;
+      margin: 0; } }
+  @media (min-width: 900px) {
+    .header__contact-info {
+      width: 300px;
+      margin-right: auto; } }
   .header__contact-info__item {
     margin: 44px 0 0 0;
     width: 25%;
@@ -12,6 +24,15 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center; }
+    @media (min-width: 700px) {
+      .header__contact-info__item {
+        margin: 0;
+        width: 100%;
+        height: 48px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center; } }
     .header__contact-info__item__text {
       order: 2;
       text-align: center;
@@ -21,9 +42,20 @@
       width: 100%;
       font-size: 12px;
       padding: 4px; }
+      @media (min-width: 700px) {
+        .header__contact-info__item__text {
+          font-size: 16px;
+          align-self: auto;
+          text-align: right;
+          order: 1;
+          width: 70%;
+          padding: 0; } }
       .header__contact-info__item__text_last {
         text-align: center;
         vertical-align: middle; }
+        @media (min-width: 700px) {
+          .header__contact-info__item__text_last {
+            text-align: right; } }
     .header__contact-info__item__icon {
       order: 1;
       margin: 8px 0 0 10px;
@@ -32,6 +64,12 @@
       background-size: contain;
       width: 40px;
       height: 40px; }
+      @media (min-width: 700px) {
+        .header__contact-info__item__icon {
+          margin: 0 10px;
+          order: 2;
+          width: 28px;
+          height: 28px; } }
 
 .header__contact-info__item__icon_birth-date {
   background-image: url("./components/cv-page/header/__header__contact-info/__header__contact-info__images/header__contact-info__image_birth-date.svg"); }
@@ -46,9 +84,16 @@
   background-image: url("./components/cv-page/header/__header__contact-info/__header__contact-info__images/header__contact-info__image_address.svg"); }
 
 .header__name {
-  margin: 0px 0 0px 0px;
+  margin: 0;
   order: 1;
   width: 100%; }
+  @media (min-width: 700px) {
+    .header__name {
+      width: 33.33%; } }
+  @media (min-width: 900px) {
+    .header__name {
+      width: 300px;
+      margin-left: auto; } }
   .header__name__full-name {
     text-align: center;
     font-size: 20px;
@@ -57,6 +102,11 @@
     margin: 0;
     width: auto;
     height: auto; }
+    @media (min-width: 700px) {
+      .header__name__full-name {
+        margin: 40px 0 0 10px;
+        font-size: 42px;
+        text-align: left; } }
   .header__name__profession {
     text-align: center;
     margin: 8px 0 0 0;
@@ -64,6 +114,11 @@
     text-transform: capitalize;
     width: auto;
     height: auto; }
+    @media (min-width: 700px) {
+      .header__name__profession {
+        margin: 38px 0 0 10px;
+        font-size: 27px;
+        text-align: left; } }
 
 .header__picture {
   margin: 10px 0 0 0px;
@@ -71,8 +126,16 @@
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (min-width: 700px) {
+    .header__picture {
+      order: 2;
+      margin: 0;
+      width: 33.33%; } }
+  @media (min-width: 900px) {
+    .header__picture {
+      width: 300px; } }
   .header__picture .header__picture__content {
-    margin: 35px 0;
+    margin: 40px 0;
     border-radius: 50%;
     width: 180px;
     height: 180px;
@@ -80,6 +143,10 @@
     background-image: url();
     background-position: center;
     background-repeat: no-repeat; }
+    @media (min-width: 700px) {
+      .header__picture .header__picture__content {
+        width: 210px;
+        height: 210px; } }
 
 .header {
   display: flex;

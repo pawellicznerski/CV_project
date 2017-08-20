@@ -1,4 +1,4 @@
-// @import "./../../../library/media-query-mixins.scss";
+@import "./../../_cv-page__base/media-query-mixins.scss";
 
 .header__contact-info{
   // border: 1px solid brown;
@@ -8,15 +8,35 @@
   justify-content: center;
   width:100%;
   margin: 0px 0 10px 0px;
+  @include tablet{
+    order: 3;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+    margin: 0;
+  };
+  @include laptop{
+    width: 300px;
+    margin-right: auto;
+  };
   &__item{
     margin: 44px 0 0 0;
     width:25%;
-    // height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     // border: 1px solid red;
+    @include tablet{
+      margin:0;
+      width:100%;
+      height: 48px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+    };
     &__text{
       order:2;
       text-align: center;
@@ -27,9 +47,20 @@
       font-size: 12px;
       padding: 4px;
       // border: 1px solid purple;
+      @include tablet{
+        font-size: 16px;
+        align-self: auto;
+        text-align: right;
+        order:1;
+        width: 70%;
+        padding: 0;
+      };
       &_last{
         text-align: center;
         vertical-align: middle;
+        @include tablet{
+          text-align: right;
+        };
       }
     }
     &__icon{
@@ -41,24 +72,17 @@
       width:40px;
       height:40px;
       // border: 1px solid pink;
-
+      @include tablet{
+        margin: 0 10px;
+        order:2;
+        width:28px;
+        height:28px;
+      };
     }
   }
 }
-
-
-
-
-
-  .header__contact-info__item__icon_birth-date{
-  background-image:url("./components/cv-page/header/__header__contact-info/__header__contact-info__images/header__contact-info__image_birth-date.svg");
+@each $icon in birth-date, phone, e-mail, address{
+  .header__contact-info__item__icon_#{$icon}{
+    background-image: url("./components/cv-page/header/__header__contact-info/__header__contact-info__images/header__contact-info__image_#{$icon}.svg");
   }
-  .header__contact-info__item__icon_phone{
-    background-image: url("./components/cv-page/header/__header__contact-info/__header__contact-info__images/header__contact-info__image_phone.svg");
-  }
-  .header__contact-info__item__icon_e-mail{
-    background-image: url("./components/cv-page/header/__header__contact-info/__header__contact-info__images/header__contact-info__image_e-mail.svg");
-  }
-  .header__contact-info__item__icon_address{
-    background-image: url("./components/cv-page/header/__header__contact-info/__header__contact-info__images/header__contact-info__image_address.svg");
-  }
+}

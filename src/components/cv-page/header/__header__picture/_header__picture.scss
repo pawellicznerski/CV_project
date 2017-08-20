@@ -9,9 +9,16 @@
   justify-content: center;
   align-items: center;
   // background-color: rgba(240,240,240,1);
-
+  @include tablet{
+    order:2;
+    margin: 0;
+    width: 33.33%;
+  };
+  @include laptop{
+    width: 300px;
+  };
   .header__picture__content{
-    margin: 35px 0;
+    margin: 40px 0;
     border-radius: 50%;
     width:180px;
     height:180px;
@@ -19,5 +26,9 @@
     background-image: url();
     background-position: center;
     background-repeat: no-repeat;
+    @include tablet{
+      width:210px;
+      height:210px;
+    };
   }
 }
