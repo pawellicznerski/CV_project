@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ExperienceBar from './__experience__experience-progress-bar/experience__experience-progress-bar.js';
+// import ExperienceBar from './__experience__experience-progress-bar/experience__experience-progress-bar.js';
 
 
 class Experience extends Component {

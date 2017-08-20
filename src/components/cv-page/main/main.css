@@ -1,3 +1,74 @@
+.competence__section-name {
+  margin: 5px 0 20px 7px;
+  background-color: rgba(10, 10, 10, 0); }
+  .competence__section-name__icon_competence {
+    margin: 8px 0 0 0;
+    height: 22px;
+    width: 22px;
+    background-image: url("./components/cv-page/main/competence/_competence_modifiers/_competence__section-name/competence__section-name__icon_competence.svg"); }
+  .competence__section-name__text_competence {
+    font-size: 26px; }
+
+.competence {
+  background-color: grey;
+  width: 100%;
+  display: flex; }
+  .competence__content {
+    margin-bottom: 10px;
+    padding-bottom: 20px; }
+  .competence .competence__competence-bars {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .competence .competence__competence-bars__el {
+      margin: 10px 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      .competence .competence__competence-bars__el__text {
+        margin-left: 8px;
+        font-size: 15px;
+        text-transform: capitalize; }
+      .competence .competence__competence-bars__el__bar {
+        margin-right: 8px;
+        width: 70%;
+        height: 14px;
+        border: 3px solid #bebebe;
+        border-radius: 9px;
+        display: flex;
+        justify-content: flex-start; }
+        .competence .competence__competence-bars__el__bar_filling {
+          height: 8px;
+          border-radius: 8px; }
+        .competence .competence__competence-bars__el__bar_filling_first {
+          background-color: rgba(0, 75, 75, 0.8);
+          border: 3px solid rgba(0, 75, 75, 0.8);
+          width: 85%; }
+        .competence .competence__competence-bars__el__bar_filling_second {
+          background-color: rgba(0, 110, 110, 0.8);
+          border: 3px solid rgba(0, 110, 110, 0.8);
+          width: 80%; }
+        .competence .competence__competence-bars__el__bar_filling_third {
+          background-color: rgba(0, 56, 54, 0.8);
+          border: 3px solid rgba(0, 56, 54, 0.8);
+          width: 95%; }
+        .competence .competence__competence-bars__el__bar_filling_fourth {
+          background-color: rgba(0, 180, 180, 0.8);
+          border: 3px solid rgba(0, 180, 180, 0.8);
+          width: 50%; }
+        .competence .competence__competence-bars__el__bar_filling_fifth {
+          background-color: rgba(0, 210, 210, 0.8);
+          border: 3px solid rgba(0, 210, 210, 0.8);
+          width: 40%; }
+        .competence .competence__competence-bars__el__bar_filling_last {
+          background-color: rgba(0, 160, 160, 0.8);
+          border: 3px solid rgba(0, 160, 160, 0.8);
+          width: 60%; }
+
 .education__education-progress-bar {
   width: 100vw;
   display: flex; }

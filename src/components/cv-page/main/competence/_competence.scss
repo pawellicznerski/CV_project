@@ -1,0 +1,84 @@
+//importing modifier of styles for the section header
+@import "./_competence_modifiers/_competence__section-name/competence__section-name.scss";
+//importing colors from main variables
+@import "./../../_cv-page__base/cv-page__base__variables.scss";
+
+.competence{
+  background-color: grey;
+  width:100%;
+  display: flex;
+  // flex-wrap: wrap;
+  &__content{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+  }
+
+
+.competence__competence-bars{
+  // background-color: grey;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  // border: 1px solid red;
+  &__el{
+    margin: 10px 0;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // border: 1px solid blue;
+    &__text{
+      margin-left: 8px;
+      font-size: 15px;
+      text-transform: capitalize;
+    }
+    &__bar{
+      margin-right: 8px;
+      width: 70%;
+      height: 14px;
+      border: 3px solid $color__details_grey;
+      border-radius: 9px;
+      display: flex;
+      justify-content: flex-start;
+      &_filling{
+        height: 8px;
+        border-radius: 8px;
+      }
+      &_filling_first{
+        background-color:$color__details_green_lighness-2;
+        border: 3px solid $color__details_green_lighness-2;
+        width: 85%;
+      }
+      &_filling_second{
+        background-color:$color__details_green_lighness-3;
+        border: 3px solid $color__details_green_lighness-3;
+        width: 80%;
+      }
+      &_filling_third{
+        background-color:$color__details_green_lighness-1;
+        border: 3px solid $color__details_green_lighness-1;
+        width: 95%;
+      }
+      &_filling_fourth{
+        background-color:$color__details_green_lighness-6;
+        border: 3px solid $color__details_green_lighness-6;
+        width: 50%;
+      }
+      &_filling_fifth{
+        background-color:$color__details_green_lighness-7;
+        border: 3px solid $color__details_green_lighness-7;
+        width: 40%;
+      }
+      &_filling_last{
+        background-color:$color__details_green_lighness-5;
+        border: 3px solid $color__details_green_lighness-5;
+        width: 60%;
+      }
+    }
+
+  }
+}
+}
