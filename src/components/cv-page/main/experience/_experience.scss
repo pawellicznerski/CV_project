@@ -9,18 +9,16 @@
   width:100%;
   display: flex;
   flex-wrap: wrap;
-  .experience__section{
+  &__section{
     margin: 10px 0;
     width: 49%;
     &_left{
-
     }
     &_right{
       border-left: 3px solid black;
     }
-
   }
-  .experience__section__el{
+  &__section__el{
     margin: 40px 0 40px 10px;
     width:90%;
     height: auto;
@@ -30,7 +28,7 @@
     background-color: $color__details_grey_light;
     border: 1px solid $color__details_grey_light;
     border-radius: 8%;
-    .experience__section__el__text_title{
+    &__text_title{
       margin: 3px;
       background-color: inherit;
       order: 1;
@@ -38,29 +36,14 @@
       word-wrap: break-word;
       color: black;
     }
-    .experience__section__el__text_main{
+    &__text_main{
       margin: 3px;
       background-color: inherit;
       order: 3;
       word-wrap: break-word;
       color: $color__details_grey_dark;
     }
-    .experience__section__el__text_arrow{
-      &::before{
-        width: 20px;
-        height: 20px;
-        x-index:1;
-        position: absolute;
-        top:10px;
-        right:-10px;
-        background-color: red;
-        background-image: url("./components/cv-page/main/experience/_experience_images/experience_images_arrow.svg");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
-    }
-    .experience__section__el__text_date{
+    &__text_date{
       margin: 3px;
       background-color: inherit;
       order: 2;
@@ -80,5 +63,34 @@
         color: $color__primary;
       }
     }
+  }
+}
+
+.experience__section__el__text_arrow{
+  &::before{
+    width: 14px;
+    height: 28px;
+    position: absolute;
+    content: "";
+    // background-color: red;
+    background-image: url("./components/cv-page/main/experience/_experience_images/experience_images_arrow.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.experience__section__el__text_arrow_left{
+  &::before{
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+  right:-10px;
+  top:20px;
+  }
+}
+.experience__section__el__text_arrow_right{
+  &::before{
+  left:-9px;
+  top:20px;
   }
 }
