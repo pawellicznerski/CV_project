@@ -1,0 +1,13 @@
+.interests__section-name{
+  margin: 5px 0 8px 7px;
+  background-color: rgba(10,10,10,0);
+    &__icon_interests{
+      margin: 8px 0 0 0;
+      height: 22px;
+      width: 22px;
+      background-image: url("./components/cv-page/main/interests/_interests_modifiers/_interests__section-name/interests__section-name__icon_interests.svg");
+    }
+    &__text_interests{
+     font-size: 26px;
+    }
+}

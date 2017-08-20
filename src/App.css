@@ -102,60 +102,62 @@
   width: 100%;
   display: flex; }
   .competence__content {
+    width: 100%;
     margin-bottom: 10px;
     padding-bottom: 20px; }
-  .competence .competence__competence-bars {
+
+.competence__competence-bars {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .competence__competence-bars__el {
+    margin: 10px 0;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap; }
-    .competence .competence__competence-bars__el {
-      margin: 10px 0;
-      width: 100%;
+    .competence__competence-bars__el__text {
+      margin-left: 8px;
+      font-size: 15px;
+      text-transform: capitalize; }
+    .competence__competence-bars__el__bar {
+      margin-right: 8px;
+      width: 70%;
+      height: 14px;
+      border: 3px solid #bebebe;
+      border-radius: 9px;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap; }
-      .competence .competence__competence-bars__el__text {
-        margin-left: 8px;
-        font-size: 15px;
-        text-transform: capitalize; }
-      .competence .competence__competence-bars__el__bar {
-        margin-right: 8px;
-        width: 70%;
-        height: 14px;
-        border: 3px solid #bebebe;
-        border-radius: 9px;
-        display: flex;
-        justify-content: flex-start; }
-        .competence .competence__competence-bars__el__bar_filling {
-          height: 8px;
-          border-radius: 8px; }
-        .competence .competence__competence-bars__el__bar_filling_first {
-          background-color: rgba(0, 75, 75, 0.8);
-          border: 3px solid rgba(0, 75, 75, 0.8);
-          width: 85%; }
-        .competence .competence__competence-bars__el__bar_filling_second {
-          background-color: rgba(0, 110, 110, 0.8);
-          border: 3px solid rgba(0, 110, 110, 0.8);
-          width: 80%; }
-        .competence .competence__competence-bars__el__bar_filling_third {
-          background-color: rgba(0, 56, 54, 0.8);
-          border: 3px solid rgba(0, 56, 54, 0.8);
-          width: 95%; }
-        .competence .competence__competence-bars__el__bar_filling_fourth {
-          background-color: rgba(0, 180, 180, 0.8);
-          border: 3px solid rgba(0, 180, 180, 0.8);
-          width: 50%; }
-        .competence .competence__competence-bars__el__bar_filling_fifth {
-          background-color: rgba(0, 210, 210, 0.8);
-          border: 3px solid rgba(0, 210, 210, 0.8);
-          width: 40%; }
-        .competence .competence__competence-bars__el__bar_filling_last {
-          background-color: rgba(0, 160, 160, 0.8);
-          border: 3px solid rgba(0, 160, 160, 0.8);
-          width: 60%; }
+      justify-content: flex-start; }
+      .competence__competence-bars__el__bar_filling {
+        height: 8px;
+        border-radius: 8px; }
+      .competence__competence-bars__el__bar_filling_first {
+        background-color: rgba(0, 75, 75, 0.8);
+        border: 3px solid rgba(0, 75, 75, 0.8);
+        width: 85%; }
+      .competence__competence-bars__el__bar_filling_second {
+        background-color: rgba(0, 110, 110, 0.8);
+        border: 3px solid rgba(0, 110, 110, 0.8);
+        width: 80%; }
+      .competence__competence-bars__el__bar_filling_third {
+        background-color: rgba(0, 56, 54, 0.8);
+        border: 3px solid rgba(0, 56, 54, 0.8);
+        width: 95%; }
+      .competence__competence-bars__el__bar_filling_fourth {
+        background-color: rgba(0, 180, 180, 0.8);
+        border: 3px solid rgba(0, 180, 180, 0.8);
+        width: 50%; }
+      .competence__competence-bars__el__bar_filling_fifth {
+        background-color: rgba(0, 210, 210, 0.8);
+        border: 3px solid rgba(0, 210, 210, 0.8);
+        width: 40%; }
+      .competence__competence-bars__el__bar_filling_last {
+        background-color: rgba(0, 160, 160, 0.8);
+        border: 3px solid rgba(0, 160, 160, 0.8);
+        width: 60%; }
 
 .education__education-progress-bar {
   width: 100vw;
@@ -282,8 +284,8 @@
   display: flex;
   flex-wrap: wrap; }
   .experience__section {
-    margin: 10px 0;
-    width: 49%; }
+    margin: 10px 0 10px 0;
+    width: 50%; }
     .experience__section_right {
       border-left: 3px solid black; }
   .experience__section__el {
@@ -349,6 +351,68 @@
 .experience__section__el__text_arrow_right::before {
   left: -9px;
   top: 20px; }
+
+.interests__section-name {
+  margin: 5px 0 8px 7px;
+  background-color: rgba(10, 10, 10, 0); }
+  .interests__section-name__icon_interests {
+    margin: 8px 0 0 0;
+    height: 22px;
+    width: 22px;
+    background-image: url("./components/cv-page/main/interests/_interests_modifiers/_interests__section-name/interests__section-name__icon_interests.svg"); }
+  .interests__section-name__text_interests {
+    font-size: 26px; }
+
+.interests {
+  background-color: grey;
+  width: 100%;
+  display: flex; }
+  .interests .interests__content {
+    width: 100%;
+    margin-bottom: 10px; }
+    .interests .interests__content .interests__cirles {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .interests .interests__content .interests__cirles_item {
+        text-transform: capitalize;
+        color: whitesmoke;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .interests .interests__content .interests__cirles_item_dark-main {
+        font-size: 23.55px;
+        width: 150px;
+        height: 150px;
+        background-color: rgba(0, 75, 75, 0.8);
+        position: relative; }
+        .interests .interests__content .interests__cirles_item_dark-main_lightest {
+          font-size: 16.5px;
+          left: -88.5px;
+          top: 52.5px;
+          width: 105px;
+          height: 105px;
+          background-color: rgba(0, 160, 160, 0.8);
+          position: absolute; }
+        .interests .interests__content .interests__cirles_item_dark-main_light {
+          font-size: 16.5px;
+          left: -55.5px;
+          top: -15px;
+          width: 90px;
+          height: 90px;
+          background-color: rgba(0, 135, 135, 0.8);
+          position: absolute; }
+        .interests .interests__content .interests__cirles_item_dark-main_darkest {
+          font-size: 16.5px;
+          right: -55.5px;
+          top: 82.5px;
+          width: 90px;
+          height: 90px;
+          background-color: rgba(0, 56, 54, 0.8);
+          position: absolute; }
 
 .main__section-name {
   width: 100%;

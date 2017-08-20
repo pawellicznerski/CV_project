@@ -1,8 +1,8 @@
-//includes styles for every inner block in education
-// @import "__experience__experience-progress-bar/experience__experience-progress-bar.scss" ;
-//includes modifier for section name. Folder with element is in "./main/__section-name" and it contain basic styles
+//importing modifier of styles for the section header
 @import '_experience_modifiers/_experience__section-name/experience__section-name.scss';
+//importing colors from main variables
 @import "./../../_cv-page__base/cv-page__base__variables.scss";
+
 
 .experience{
   background-color: grey;
@@ -10,8 +10,8 @@
   display: flex;
   flex-wrap: wrap;
   &__section{
-    margin: 10px 0;
-    width: 49%;
+    margin: 10px 0 10px 0;
+    width: 50%;
     &_left{
     }
     &_right{
