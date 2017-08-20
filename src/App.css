@@ -203,7 +203,8 @@
   width: 100%; }
 
 .experience__section-name {
-  margin: 8px 0 0 10px; }
+  margin: 5px 0 110px 10px;
+  background-color: rgba(10, 10, 10, 0); }
   .experience__section-name__icon_experience {
     margin: 8px 0 0 0;
     height: 22px;
@@ -213,15 +214,67 @@
     font-size: 26px; }
 
 .experience {
+  background-color: grey;
   width: 100%;
   display: flex;
   flex-wrap: wrap; }
   .experience .experience__section {
+    margin: 10px 0;
     width: 49%; }
-    .experience .experience__section__el {
-      width: 90%;
-      background-color: whitesmoke;
-      border-radius: 8%; }
+    .experience .experience__section_right {
+      border-left: 3px solid black; }
+  .experience .experience__section__el {
+    margin: 40px 0 40px 10px;
+    width: 90%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 8%; }
+    .experience .experience__section__el .experience__section__el__text_title {
+      margin: 3px;
+      background-color: inherit;
+      order: 1;
+      width: 50%;
+      word-wrap: break-word;
+      color: black; }
+    .experience .experience__section__el .experience__section__el__text_main {
+      margin: 3px;
+      background-color: inherit;
+      order: 3;
+      word-wrap: break-word;
+      color: #a2a2a2; }
+    .experience .experience__section__el .experience__section__el__text_arrow::before {
+      width: 20px;
+      height: 20px;
+      x-index: 1;
+      position: absolute;
+      top: 10px;
+      right: -10px;
+      background-color: red;
+      background-image: url("./components/cv-page/main/experience/_experience_images/experience_images_arrow.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .experience .experience__section__el .experience__section__el__text_date {
+      margin: 3px;
+      background-color: inherit;
+      order: 2;
+      width: 40%;
+      word-wrap: break-word;
+      border-left: 2px solid #a2a2a2; }
+      .experience .experience__section__el .experience__section__el__text_date_month {
+        background-color: inherit;
+        margin-left: 6px;
+        color: #a2a2a2; }
+      .experience .experience__section__el .experience__section__el__text_date_year {
+        background-color: inherit;
+        margin-left: 6px;
+        font-weight: bold;
+        font-size: 16px;
+        color: #00545b; }
 
 .main__section-name {
   width: 100%;

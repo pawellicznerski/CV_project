@@ -5,35 +5,79 @@
 @import "./../../_cv-page__base/cv-page__base__variables.scss";
 
 .experience{
+  background-color: grey;
   width:100%;
   display: flex;
   flex-wrap: wrap;
   .experience__section{
+    margin: 10px 0;
     width: 49%;
-    // &_left{
-    //
-    // }
-    // &_right{
-    //   border-left: 3px solid black;
-    // }
-    &__el{
-      width:90%;
-      background-color: $color__details_grey_light;
-      border-radius: 8%;
-      &__text_title{
-        // background-color: $color__details_grey_light;
-      }
-      &__text_main{
-        // background-color: $color__details_grey_light;
-      }
-      &__text_date{
+    &_left{
 
-        &_month{
-          // background-color: $color__details_grey_light;
-        }
-        &_year{
-          // background-color: $color__details_grey_light;
-        }
+    }
+    &_right{
+      border-left: 3px solid black;
+    }
+
+  }
+  .experience__section__el{
+    margin: 40px 0 40px 10px;
+    width:90%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $color__details_grey_light;
+    border: 1px solid $color__details_grey_light;
+    border-radius: 8%;
+    .experience__section__el__text_title{
+      margin: 3px;
+      background-color: inherit;
+      order: 1;
+      width: 50%;
+      word-wrap: break-word;
+      color: black;
+    }
+    .experience__section__el__text_main{
+      margin: 3px;
+      background-color: inherit;
+      order: 3;
+      word-wrap: break-word;
+      color: $color__details_grey_dark;
+    }
+    .experience__section__el__text_arrow{
+      &::before{
+        width: 20px;
+        height: 20px;
+        x-index:1;
+        position: absolute;
+        top:10px;
+        right:-10px;
+        background-color: red;
+        background-image: url("./components/cv-page/main/experience/_experience_images/experience_images_arrow.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+    .experience__section__el__text_date{
+      margin: 3px;
+      background-color: inherit;
+      order: 2;
+      width: 40%;
+      word-wrap: break-word;
+      border-left: 2px solid $color__details_grey_dark;
+      &_month{
+        background-color: inherit;
+        margin-left: 6px;
+        color: $color__details_grey_dark;
+      }
+      &_year{
+        background-color: inherit;
+        margin-left: 6px;
+        font-weight: bold;
+        font-size: 16px;
+        color: $color__primary;
       }
     }
   }

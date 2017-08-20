@@ -9,7 +9,7 @@ class Experience extends Component {
       <div className="experience">
         <div className="experience__section experience__section_left">
 
-          <div className="experience__section__el experience__section__el_left">
+          <div className="experience__section__el">
             <p className="experience__section__el__text_title">Stage Chez Artips</p>
             <p className="experience__section__el__text_main">Travaux de design et d'interogation dans la Start-up. Francaise "Artips". Montreal, CANADA</p>
             <div className="experience__section__el__text_date">
@@ -38,6 +38,7 @@ class Experience extends Component {
           <div className="experience__section__el experience__section__el_right">
             <p className="experience__section__el__text_title">Travaux saisonier</p>
             <p className="experience__section__el__text_main">Saisonier dans la ceuillette de mandarine. Riverton Farm - 4625 Gayndah AUSTRALIE</p>
+            <span className="experience__section__el__text_arrow"></span>
             <div className="experience__section__el__text_date">
               <p className="experience__section__el__text_date_month">Mars-Mai</p>
               <p className="experience__section__el__text_date_year">2011</p>
