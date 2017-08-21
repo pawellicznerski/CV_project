@@ -8,7 +8,7 @@ class Education extends Component {
       <div className="education">
         <div className="main__section-name education__section-name">
           <div className="main__section-name__icon education__section-name__icon_education"></div>
-          <p className="main__section-name__text education__section-name__text_education">formaction</p>
+          <p className="main__section-name__text education__section-name__text_education">formations</p>
         </div>
         <EducationProgressBar></EducationProgressBar>
       </div>

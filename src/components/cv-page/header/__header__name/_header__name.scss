@@ -10,7 +10,7 @@
   };
   @include laptop{
     width: 300px;
-    margin-left: auto;
+    // margin-left: auto;
   };
   &__full-name{
     text-align: center;

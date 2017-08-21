@@ -11,8 +11,10 @@ class Main extends Component {
       <main className="main">
         <Education></Education>
         <Experience></Experience>
-        <Competence></Competence>
-        <Interests></Interests>
+        <div className="main__last-section_laptop-wrapper">
+          <Competence></Competence>
+          <Interests></Interests>
+        </div>
       </main>
     );
   }

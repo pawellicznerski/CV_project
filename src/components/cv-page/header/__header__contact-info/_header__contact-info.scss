@@ -17,8 +17,8 @@
     margin: 0;
   };
   @include laptop{
-    width: 300px;
-    margin-right: auto;
+    width: 297px;
+    // margin-right: auto;
   };
   &__item{
     margin: 44px 0 0 0;

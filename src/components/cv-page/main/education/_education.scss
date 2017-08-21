@@ -4,6 +4,7 @@
 @import '_education_modifiers/_education__section-name/education__section-name.scss';
 
 .education{
-  width:100%;
-  // border: 1px solid pink;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(140,140,140,1);
 }
