@@ -134,17 +134,28 @@
       width: 300px; } }
   .header__picture .header__picture__content {
     margin: 40px 0;
+    border: 6px solid #bebebe;
     border-radius: 50%;
     width: 180px;
     height: 180px;
-    background-color: rgba(100, 10, 10, 0.6);
-    background-image: url();
+    background-color: rgba(10, 10, 10, 0.6);
+    background-image: url("./components/cv-page/header/__header__picture/Rick-astley.jpg");
     background-position: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: flash ease 1.5s infinite; }
     @media (min-width: 700px) {
       .header__picture .header__picture__content {
         width: 210px;
         height: 210px; } }
+
+@keyframes flash {
+  0% {
+    border: 6px solid #bebebe; }
+  50% {
+    border: 16px solid #bebebe; }
+  100% {
+    border: 6px solid #bebebe; } }
 
 .header {
   display: flex;
