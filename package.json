@@ -2,6 +2,7 @@
   "name": "training-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://pawellicznerski.github.io/CV_project",
   "dependencies": {
     "css-loader": "^0.28.4",
     "node-sass-chokidar": "0.0.3",
@@ -13,6 +14,7 @@
     "react-scripts": "^0.9.5"
   },
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "node-sass-chokidar": "0.0.3",
     "react-scripts": "0.9.5"
   },
@@ -23,6 +25,8 @@
     "build": "react-scripts build",
     "start-js": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
