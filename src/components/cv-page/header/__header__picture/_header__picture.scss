@@ -25,7 +25,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: flash ease 1.5s infinite;
+    animation: flash ease 0.5s infinite;
     @include tablet{
       width:210px;
       height:210px;
@@ -35,6 +35,6 @@
 
 @keyframes flash{
   0% {border: 6px solid rgba(190,190,190,1);}
-	50% {border: 16px solid rgba(190,190,190,1);}
+	50% {border: 66px solid rgba(190,190,190,1);}
 	100% {border: 6px solid rgba(190,190,190,1);}
 }

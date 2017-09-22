@@ -143,7 +143,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: flash ease 1.5s infinite; }
+    animation: flash ease 0.5s infinite; }
     @media (min-width: 700px) {
       .header__picture .header__picture__content {
         width: 210px;
@@ -153,7 +153,7 @@
   0% {
     border: 6px solid #bebebe; }
   50% {
-    border: 16px solid #bebebe; }
+    border: 66px solid #bebebe; }
   100% {
     border: 6px solid #bebebe; } }
 
@@ -221,7 +221,7 @@
         margin: 2px 0; } }
     .competence__competence-bars__el__text {
       margin-left: 8px;
-      font-size: 15px;
+      font-size: 7px;
       text-transform: capitalize; }
       @media (min-width: 900px) {
         .competence__competence-bars__el__text {

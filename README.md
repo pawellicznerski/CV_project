@@ -1,5 +1,5 @@
-<h3>Zapraszam do mojego project CV!</h3>
+<h3>Zapraszam do mojego project CV_project!</h3>
 
-<h3>Link do demo:</h3>
+<h4>Użyte w projekcie: HTML, CSS, Sass, RWD, BEM</h4><br/>
 
-http://pawellicznerski.github.io/CV_project
+<p>Link do demo: http://pawellicznerski.github.io/CV_project</p>
